@@ -1,0 +1,73 @@
+body {
+    min-width: 300px;
+    min-width: 300px;
+    background-color: rgb(7, 232, 248);
+}
+.box {
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 80px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+.box-1 {
+    margin: 20px  auto;
+    width: 90%;
+    height: 60px;
+    background-color: rgba(0, 0, 0,0);
+}
+.box-2 {
+    max-width: 470px;
+    margin: 40px auto;
+    width: 70%;
+    height: 60px;
+    background-color: rgba(0, 0, 0,0);
+    text-align: justify;
+    font-size: 11px;
+    color: rgb(255,255,255);
+}
+.box-3 {
+    margin-top: 100px;
+    float: left;
+    width: 50%;
+    height: 60px;
+    background-color: rgba(0, 0, 0,0);
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255,255,255);
+}
+.box-4 {
+    margin-top: 100px;
+    float: right;
+    width: 50%;
+    height: 60px;
+    background-color: rgba(0, 0, 0,0);
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255,255,255);
+    
+}
+.box-5 {
+    margin: auto;
+    max-width: 800px;
+    margin-top: 100px auto;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0,0);
+}
+.fanhu {
+    width: 24px;
+    height: auto;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: auto;
+}
+.logo-1 {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+    height: auto;   
+}
