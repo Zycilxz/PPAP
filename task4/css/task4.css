@@ -1,0 +1,139 @@
+
+body {
+            margin: 0;
+            background-color: rgb(179, 178, 178);
+            min-width: 300px;
+        }
+input{
+    border: none;
+    outline:none;
+}
+
+.box1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(18, 142, 224);
+            width: 100%;
+            height: 40px;
+            border: 0 hidden;
+        }
+
+.box11 {
+            padding: 10px;
+            width: 50px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+.box12 {
+            text-align: center;
+            padding: 10px;
+            width: 400px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+.box13 {
+            text-align: right;
+            padding: 10px;
+            width: 50px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+.zhuce {
+            display: block;
+            margin: auto;
+            width: 30px;
+            height: 15px;
+        }
+
+.denglu {
+            display: block;
+            margin: auto;
+            margin: auto;
+            width: 40px;
+            height: auto;
+        }
+
+.guanbi {
+            display: block;
+            margin: auto;
+            width: 30px;
+            height: 15px;
+        }   
+.box2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border: 0 hidden;
+    background-color: rgba(255,255,255,1);
+}
+.box3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border: 0 hidden;
+    background-color: rgba(255,255,255,1);
+}
+.box21 {
+    width: 20px;
+    height: auto;
+    padding: 12.7px;
+}
+.box22 {
+    width: 1px;
+    height: 30px;
+    padding: 10px;
+    margin: 0 -10px;
+}
+.box23 {
+    width: auto;
+    height: auto;
+    padding: 13.78px;
+}
+.box4 {
+    width: 100%;
+    height: 50px;
+    margin-top:10px;
+    border: 0 hidden;
+    background-color: rgba(18,142,224,1);
+}
+.lock {
+    width: 15px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.img2 {
+    width: 1.1px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.img3{
+    width: 136px;
+    height: 22.4px;
+}
+.img4 {
+    width: auto;
+    height: 25px;
+    display: block;
+    margin: auto;
+    padding: 12.5px;
+}
+.box5 {
+    float: right;
+    width: 64px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    padding-right: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
