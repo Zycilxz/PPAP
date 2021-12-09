@@ -1,0 +1,204 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    margin: 0;
+    background-color:mediumturquoise;
+    padding-bottom: 50px;
+}
+.header {
+    background-color:mediumturquoise;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bgmenu {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/sprite.png);
+    background-position: 239px 172px;
+    background-size: 135px;
+    
+}
+.header_content {
+    line-height: 40px;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+.bgclose {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/sprite.png);
+    background-position: 140px 172px;
+    background-size: 135px;
+   
+}
+.menu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color:mediumturquoise;
+}
+.menu1 {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(30,30,30,0.9);
+    background-color: rgba(220,220,220,0.5);
+    border: none;
+    padding: 5px 10px 5px 50px;
+}
+.menu2 {
+    float: right;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: wheat;
+    background-image: url(../img/形状\ 17.png);
+    background-repeat:no-repeat;
+    background-position: 8px 4px;
+    background-size: 20px;
+}
+.menu3 {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-left: 50px;
+    background-image: url(../img/sprite.png);
+    background-position: 89.5% 86%;
+    background-size: 220px;
+}
+.menu4 {
+    width: auto;
+    height: 30px;
+    margin-left: 50px;
+    color: rgba(255,255,255,1);
+    padding: 6px 0; 
+    font-size: 13px;
+    line-height: 18px; 
+}
+.footer {
+    height: 50px;
+    position: fixed;
+    margin-top: -25px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:mediumturquoise;
+    padding: 10px 20px;
+}
+.footer1 {
+    width: 100%;
+    height: 100%;
+    background-color: sandybrown;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+.main {
+    margin-top: 130px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.main1 {  
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 10px;
+}
+.maina {
+    width: 80px;
+    height: 110px;
+    margin: 15px 30px;
+}
+.maina1 {
+    width: 100%;
+    height: 55px;
+    background-color: sandybrown;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    text-align: center;
+    line-height: 55px;
+   
+}
+.maina2 {
+    width: 100%;
+    height: 25px;
+    background-color: green;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-size: 10px;
+}
+.maina3 {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    white-space: nowrap;
+    display: none;
+    width: 80px;
+    height: 18px;
+    background-color: rgba(255,255,255,1);
+    background-image: url(../img/sprite.png);
+    background-position: 5% 85%;
+    background-size: 460px;
+    border-right: 2px  solid mediumturquoise;
+}
+.maina:hover .maina3 {
+     display:block;
+}  
+.bommot1 {
+    position: fixed;
+    bottom: 50px;
+    left: 7.5%;
+    right: 7.5%;
+    z-index: -2;
+    width: 85%;
+    height: 1px;
+    border: none;
+    background-color: white;
+    justify-content: center;
+}
+.a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.a:hover{
+    color: white;
+    text-decoration: none;
+}
+.audio1 {
+    display: block;
+    position: fixed;
+    top: 44px;
+    right: 10px;
+    z-index: 3;
+    margin-right: -259px;
+    opacity: 0;
+}
