@@ -185,10 +185,8 @@ body {
     z-index: 2;
 }
 .margin-topa {
-    margin-top: 50px;
     color: rgba(34, 34, 34, 0.8); 
     background-color: rgba(255, 255, 255, 1);
-    padding: 0;
 }
 .carousel-indicators {
     bottom: -30px;
@@ -271,10 +269,28 @@ body {
         padding-top: 10%;
     }
 }
-@media (max-width: 577px) {
-    .pl  {
-        width: 25%;
+@media (max-width: 1024px) {
+    .biankuang  {
+        padding-top: 6%;
     }
 }
+@media (min-width: 1025px) {
+    .biankuang  {
+        padding-top: 4%;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .bg-rgba {
+     margin: 10%;
+     padding: 10px 60px;
+     line-height: 20px;
+    }
+}
+
 
 

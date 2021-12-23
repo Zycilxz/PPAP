@@ -96,22 +96,24 @@ body {
     display: none;
     position: absolute;
     top: 84px;
-    right: 15px;
-    width: 70%;
+    right: 5%;
+    left: 30%;
+    width: 65%;
     height: 800px;
-    margin-left: 50px;
     background-color: rgba(255,255,255,1);
     padding: 20px 30px;
     color: rgba(200,200,200,1);
     z-index: -2;
-    /*hower  显示在这*/
-}
+   /* hower  显示在这*/
+} 
 .maina {
     display: block;
     position: absolute;
     top: 84px;
-    right: 15px;
+    right: 5%;
+    left: 30%;
     width: 65%;
+    line-height: 25px;
     min-height: 800px;
     background-color: rgba(255,255,255,1);
     z-index: 1;
@@ -119,6 +121,7 @@ body {
     color: rgba(200,200,200,1);
     font-size: 8px;
     word-wrap:break-word;
+    
 }
 .maina1 {
     float: left;
