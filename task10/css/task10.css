@@ -1,0 +1,247 @@
+body {
+    min-width: 470px;
+}
+.footer {
+    background-color:blue; 
+    color: white; 
+    font-size: 12px; 
+    padding: 5px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    text-align: center;
+}
+.footer1 {
+    float: right; 
+    width: 90px ; 
+    height: 90px;
+}
+.footer2 {
+    line-height: 30px; 
+    font-size: 12px; 
+    height: 110px; 
+    margin: auto; 
+    padding: 10px; 
+}
+.footer3 {
+    background-color: rgba(200, 200, 200, .2); 
+    margin-top: 50px;
+}
+.mainbody {
+    width: 15%; 
+    height: 35px; 
+    color: white; 
+    background-color: red; 
+    border-radius: 2px; 
+    text-align: center; 
+    line-height: 35px; 
+    font-size: 20px;
+}
+.mainbody1 {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.mainbody2 {
+    position:absolute; 
+    display: flex; 
+    align-items: center; 
+    width: 100px; 
+    right: 20px; 
+    top: 0; 
+    bottom: 0;
+}
+.mainbodyfooter {
+    position: relative; 
+    padding-right: 120px;  
+    background-color: rgb(238, 242, 245);
+    color: rgba(130, 130, 130, 1); 
+    font-size: 14px;
+}
+.mainbodyfooter1 {
+    line-height: 18px; 
+    padding: 10px 5px; 
+    background-color: rgba(180, 180, 180, .5); 
+    color: #0066ff;
+}
+.bodyimg {
+    float: left; 
+    width: auto; 
+    height:18px; 
+    margin-right: 5px;
+}
+.bodyimg1 {
+    float: left; 
+    width: 18px; 
+    height: auto; 
+    margin-right: 5px;
+} 
+.bodyinput {
+    width: 40px; 
+    height: 20px; 
+    margin: 0 3px;
+}
+.bodytd {
+    line-height: 31.2px;
+}
+.bodytd1 {
+    line-height: 31.2px;
+}
+.mainmenu1 {
+    background-color: rgb(200, 200, 200); 
+    width: 25%; 
+    margin: 35px 0 50px;
+    position: relative;
+}
+.mainmenu11 {
+    background-color: orange;
+    width: 25%; 
+    margin: 35px 0 50px;
+    position: relative;
+}
+.mainmenu2 {
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+    background-color: rgb(200, 200, 200); 
+    color: white; 
+    line-height: 20px; text-align: center; 
+    margin: -8px auto;
+}
+.mainmenu3 {
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 15px; 
+    margin-bottom: -35px; 
+    text-align: center; 
+    color: rgb(200, 200, 200);
+}
+.mainmenu12 {
+    border-radius: 50%; 
+    width: 20px; 
+    height: 20px; 
+    background-color: orange; 
+    color: white; 
+    line-height: 20px; 
+    text-align: center; 
+    margin: -8px auto;
+}
+.bodyfontsize {
+    line-height: 18px; 
+    padding: 10px 5px; 
+    background-color: rgba(180, 180, 180, .5); 
+    color: #0066ff;
+}
+.bodymainimg {
+    float: left; 
+    width: 18px; 
+    height: auto; 
+    margin-right: 5px;
+}
+.bodyheader {
+    border-radius: 5px; 
+    border: 1px solid rgba(130, 130, 130, .5);
+}
+.padd10 {
+    padding: 10px;
+}
+.padd50 {
+    padding: 50px 0;
+}
+.padd140 {
+    padding: 140px 0;
+}
+.padd23 {
+    padding: 0 0 0 23px;
+}
+.padd25 {
+    padding: 25px; 
+    background-color: rgba(200, 200, 200, .2);
+}
+.padd3 {
+    display: flex;
+    align-items: center;
+}
+.padd5 {
+    padding: 5px;
+}
+.margin15 {
+    margin-right: -15px;
+    width: 100px;
+    height: 25px;
+    font-size: 12px; 
+    text-align: left;
+    appearance: none; 
+    background-image: url(../img/dropdown.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: right;
+}
+.bodymainmenutd {
+    padding: 10px 20px 10px 0; 
+    text-align: right; 
+    line-height: 74.5px;
+}
+.tablewidth {
+    width: 100%; 
+    background-color: rgb(238, 242, 245);
+}
+.alignright {
+    text-align: right;
+}
+.floatleft {
+    float:left;
+}
+.floatleftblock {
+    float:left;
+    display: block;
+}
+.mainheadertop {
+    padding: 20px 0;
+    background-color: rgb(238, 242, 245); 
+    border-radius: 2px; 
+    color: rgba(130, 130, 130, 1); 
+    font-size: 14px;
+    line-height: 20px;
+}
+.bluebox {
+    width: 2px; 
+    height: 16px; 
+    background-color: blue;  
+    margin: 7px 5px; 
+    border: 0; 
+    float: left;
+}
+.navbar-collapse {
+    flex-direction: row-reverse;
+}
+.color1 {
+    background-color: rgb(240, 240, 240);
+}
+/* @media (max-width: 768px) { 
+    .color1 {
+        background-color: blue;
+    }
+} */
+
+@media (max-width: 768px) { 
+    .bodytd1 {
+        position: relative;
+        line-height: 31.2px;
+        margin-bottom: 31.2px;
+    }
+}
+@media (max-width: 768px) { 
+    .bodytd {
+        position: absolute;
+        line-height: 31.2px;
+        bottom: 0;
+        left: 0;
+    }
+}
+@media (max-width: 768px) { 
+    .btn2 {
+        width: 100%;
+    }
+}
