@@ -1,0 +1,177 @@
+@width100:100%;
+@width: 100px;
+@width-: -100px;
+@height:100px;
+@background-color00000: #00000000;
+@background-colorfff: #fff;
+@background-color0f0: #5ac0ce;
+@bg: background-color;
+@t-a: text-align;
+@color:color;
+@value:105px;
+
+body{
+    @{bg}: #eef0f4;
+    .margin(@t:0,@b:0,@l:0,@r:0)
+}
+
+.text-align(l){
+    text-align: left;
+}
+.text-align(c){
+    text-align: center;
+}
+.text-align(r){
+    text-align: right;
+}
+.display(@d:_,@ai:_,@jc:_,@fd:_,@fw:_,@ff:_,@ac:_){
+    display: @d;
+    align-items: @ai;
+    justify-content: @jc;
+    flex-direction: @fd ;
+    flex-flow: @ff;
+    flex-wrap: @fw;
+    align-content: @ac;
+}
+.padding(@t:_,@r:_,@b:_,@l:_){
+    padding-top: @t;
+    padding-right: @r;
+    padding-bottom: @b;
+    padding-left: @l;
+}
+.margin(@t:_,@r:_,@b:_,@l:_){
+    margin-top: @t;
+    margin-right: @r;
+    margin-bottom: @b;
+    margin-left: @l;
+}
+.l-h{
+    line-height:@value - 65;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.position(@p:_,@t:_,@r:_,@b:_,@l:_){
+    position: @p;
+    top:@t;
+    left:@l;
+    right: @r;
+    bottom: @b;
+}
+
+
+.container{
+    @{bg}: @background-color0f0;
+    width: @width100;
+    .display(@d:flex,@ai:center,@jc:space-between);
+    :nth-child(1){
+        font-size:@value - 90;
+        &:extend(.l-h);
+        @{color}:@background-colorfff;
+        .margin(@l:@value - 90,@r:@value - 90,);
+        @{bg}:@background-color0f0;
+        border: none;
+        outline: none;
+        &:hover{
+            cursor:pointer;
+            @{bg}:#5ac0ceaa;
+        }
+    }
+    :nth-child(2){
+        font-size:@value - 80;
+        &:extend(.l-h);
+        @{color}:@background-colorfff;
+    }
+    :nth-child(3){
+        font-size:@value - 90;
+        &:extend(.l-h);
+        @{color}:@background-colorfff;
+        .margin(@l:@value - 90,@r:@value - 90,);
+        @{bg}:@background-color0f0;
+        border: none;
+        outline: none;
+        &:hover{
+            cursor:pointer;
+            @{bg}:#5ac0ceaa;
+        }
+    }
+}
+.main{
+    width: @width100;
+    .margin(@t:@value - 90,@b:@value - 90,);
+    .maintel{
+        .padding(@t:10px,@b:10px);
+        width: @width100;
+        @{bg}:@background-colorfff;
+        .display(@d:flex,@fd:row,@fw:nowrap,@ai:center,@jc:flex-start);
+        span{
+            .display(@d:block);
+            .padding(@r:20px,@l:10px);
+            width: @width - 73;
+            height: @height - 59;
+            border-right: 1px solid #00000077;
+            img{
+                position: relative;
+                top: 10%;
+                left: 10%;
+                width: @width100 - 20;
+                height: @width100 - 20;
+            }
+        }
+        input{
+            border: none;
+            outline: none;
+            .padding(@l:20px);
+            .display(@d:block);
+            width: @width100;
+        }
+    }
+    .mainlock{
+        .margin(@t:15px);
+        .padding(@t:10px,@b:10px);
+        width: @width100;
+        @{bg}:@background-colorfff;
+        .display(@d:flex,@fd:row,@fw:nowrap,@ai:center,@jc:flex-start);
+        span{
+            .display(@d:block);
+            .padding(@r:20px,@l:10px);
+            width: @width - 73;
+            height: @height - 59;
+            border-right: 1px solid #00000077;
+            img{
+                .position(@p:relative,@t:10%,@l:10%);
+                width: @width100 - 20;
+                height: @width100 - 20;
+            }
+        }
+        input{
+            border: none;
+            outline: none;
+            .padding(@l:20px);
+            .display(@d:block);
+            width: @width100;
+        }
+    }
+}
+.footer{
+    .position(@p:relative);
+    width: @width100;
+    .text-align(c);
+    button{
+        width: @width100;
+        line-height: @height - 60;
+        .padding(@t:10px, @b:10px);
+        font-size: @height - 70;
+        @{color}:@background-colorfff;
+        @{bg}:@background-color0f0;
+        border: none;
+        outline: none;
+        &:hover{
+            cursor:pointer;
+            @{bg}:#5ac0ceaa;
+        }
+    }
+    div{
+        font-size: 16px;
+        .position(@p:absolute,@b:0,@r:0);
+        .margin(@b:-40px);
+    }
+}

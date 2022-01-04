@@ -1,0 +1,218 @@
+body {
+  background-color: #eef0f4;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.l-h,
+.container :nth-child(1),
+.container :nth-child(2),
+.container :nth-child(3) {
+  line-height: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  background-color: #5ac0ce;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: _;
+  flex-flow: _;
+  flex-wrap: _;
+  align-content: _;
+}
+.container :nth-child(1) {
+  font-size: 15px;
+  color: #fff;
+  margin-top: _;
+  margin-right: 15px;
+  margin-bottom: _;
+  margin-left: 15px;
+  background-color: #5ac0ce;
+  border: none;
+  outline: none;
+}
+.container :nth-child(1):hover {
+  cursor: pointer;
+  background-color: #5ac0ceaa;
+}
+.container :nth-child(2) {
+  font-size: 25px;
+  color: #fff;
+}
+.container :nth-child(3) {
+  font-size: 15px;
+  color: #fff;
+  margin-top: _;
+  margin-right: 15px;
+  margin-bottom: _;
+  margin-left: 15px;
+  background-color: #5ac0ce;
+  border: none;
+  outline: none;
+}
+.container :nth-child(3):hover {
+  cursor: pointer;
+  background-color: #5ac0ceaa;
+}
+.main {
+  width: 100%;
+  margin-top: 15px;
+  margin-right: _;
+  margin-bottom: 15px;
+  margin-left: _;
+}
+.main .maintel {
+  padding-top: 10px;
+  padding-right: _;
+  padding-bottom: 10px;
+  padding-left: _;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: _;
+  flex-wrap: nowrap;
+  align-content: _;
+}
+.main .maintel span {
+  display: block;
+  align-items: _;
+  justify-content: _;
+  flex-direction: _;
+  flex-flow: _;
+  flex-wrap: _;
+  align-content: _;
+  padding-top: _;
+  padding-right: 20px;
+  padding-bottom: _;
+  padding-left: 10px;
+  width: 27px;
+  height: 41px;
+  border-right: 1px solid #00000077;
+}
+.main .maintel span img {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+.main .maintel input {
+  border: none;
+  outline: none;
+  padding-top: _;
+  padding-right: _;
+  padding-bottom: _;
+  padding-left: 20px;
+  display: block;
+  align-items: _;
+  justify-content: _;
+  flex-direction: _;
+  flex-flow: _;
+  flex-wrap: _;
+  align-content: _;
+  width: 100%;
+}
+.main .mainlock {
+  margin-top: 15px;
+  margin-right: _;
+  margin-bottom: _;
+  margin-left: _;
+  padding-top: 10px;
+  padding-right: _;
+  padding-bottom: 10px;
+  padding-left: _;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: _;
+  flex-wrap: nowrap;
+  align-content: _;
+}
+.main .mainlock span {
+  display: block;
+  align-items: _;
+  justify-content: _;
+  flex-direction: _;
+  flex-flow: _;
+  flex-wrap: _;
+  align-content: _;
+  padding-top: _;
+  padding-right: 20px;
+  padding-bottom: _;
+  padding-left: 10px;
+  width: 27px;
+  height: 41px;
+  border-right: 1px solid #00000077;
+}
+.main .mainlock span img {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  right: _;
+  bottom: _;
+  width: 80%;
+  height: 80%;
+}
+.main .mainlock input {
+  border: none;
+  outline: none;
+  padding-top: _;
+  padding-right: _;
+  padding-bottom: _;
+  padding-left: 20px;
+  display: block;
+  align-items: _;
+  justify-content: _;
+  flex-direction: _;
+  flex-flow: _;
+  flex-wrap: _;
+  align-content: _;
+  width: 100%;
+}
+.footer {
+  position: relative;
+  top: _;
+  left: _;
+  right: _;
+  bottom: _;
+  width: 100%;
+  text-align: center;
+}
+.footer button {
+  width: 100%;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-right: _;
+  padding-bottom: 10px;
+  padding-left: _;
+  font-size: 30px;
+  color: #fff;
+  background-color: #5ac0ce;
+  border: none;
+  outline: none;
+}
+.footer button:hover {
+  cursor: pointer;
+  background-color: #5ac0ceaa;
+}
+.footer div {
+  font-size: 16px;
+  position: absolute;
+  top: _;
+  left: _;
+  right: 0;
+  bottom: 0;
+  margin-top: _;
+  margin-right: _;
+  margin-bottom: -40px;
+  margin-left: _;
+}
