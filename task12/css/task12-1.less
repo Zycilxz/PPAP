@@ -1,0 +1,213 @@
+//变量
+//inherit 继承
+@width100:100%;
+@width: 100px;
+@width-: -100px;
+@height:100px;
+@background-color00000: #00000000;
+@background-colorfff: #fff;
+@background-color0f0: #5ac0ce;
+@bg: background-color;
+@value:100px;
+@auto:auto;
+.display(@d:_,@ai:_,@jc:_,@fd:_,@fw:_,@ff:_,@ac:_,@fg:_ ){
+    display: @d;
+    align-items: @ai;
+    justify-content: @jc;
+    flex-direction: @fd ;
+    flex-flow: @ff;
+    flex-wrap: @fw;
+    align-content: @ac;
+    flex-grow:@fg;
+}
+.position(@p:_,@t:_,@r:_,@b:_,@l:_){
+    position: @p;
+    top:@t;
+    right: @r;
+    bottom: @b;
+    left:@l;
+}
+.padding(@t:_,@r:_,@b:_,@l:_){
+    padding-top: @t;
+    padding-right: @r;
+    padding-bottom: @b;
+    padding-left: @l;
+}
+.margin(@t:auto,@r:auto,@b:auto,@l:auto){
+    margin-top: @t;
+    margin-right: @r;
+    margin-bottom: @b;
+    margin-left: @l;
+}
+.background(@c:_,@i:_,@s:_,@p:_,@px:_,@py:_,@r:no-repeat){
+    background-color: @c ;
+    background-image: @i;
+    background-size: @s;
+    background-position: @p;
+    background-position-x: @px;
+    background-position-y: @py;
+    background-repeat: @r;
+}
+.font(@fs:_,@lh:_,@ff:Monospace,@ta:_,@c:_,@ws:_,@td:_,@va:_,@tt:_,@ti:_,@ls:_){
+    font-size: @fs;
+    line-height:@lh;
+    font-family: @ff;
+    //text-align: justify; 值会拉伸线条，使每条线都有相等的宽度（比如报纸和杂志）。
+    text-align: @ta;
+    //将所有内容转换为大写或小写字母，或将每个单词的首字母大写uppercase大lowercase小capitalize首大
+    text-transform: @tt;
+    color: @c;
+    //vertical-align 属性设置元素的垂直对齐方式。top middle bottom
+    vertical-align: @va;
+    //文本换行
+    white-space: @ws;
+    //字体装饰 text-decoration 属性用于设置或删除文本装饰。text-decoration: none; 通常用于从链接上删除下划线：text-decoration: overline;上   text-decoration: line-through;中   text-decoration: underline;下
+    text-decoration: @td;
+    //更改元素的文本方向direction: rtl; unicode-bidi: bidi-override;
+    //首行缩进px
+    text-indent: @ti;
+    //字母间距px；word-spacing单词或字间距px
+    letter-spacing: @ls;
+    //text-shadow 文字阴影效果  两个数值1向右偏移，数值2向下偏移 数值3阴影模糊效果 后面可跟颜色
+    //white-space:nowrap overflow:hidden;使用后  text-overflow:ellipsis溢出省略号text-overflow:clip溢出隐藏
+}
+body{
+    min-width: 470px;
+    .margin(@t:113px,@b:65px,@l:0,@r:0)
+}
+
+.container{
+    z-index: 2;
+    width: @width100;
+    border: none;
+    .padding(@t:15px,  @b:15px );
+    .position(@p:fixed,@l:0,@r:0,@t:0);
+    .background(@c:@background-color0f0,);
+    .containermain{
+        .position(relative, 0, 0, 0, 0);
+        .display(@d:flex,@ai:center,@jc:center);
+        :nth-child(1){
+            width: @width - 20;
+            @{bg}:#00000022;
+            .font(@fs:18px, @lh:30px ,@ff:Monospace,  @ta: center, @c:#fff , @ws:nowrap,);
+            border-radius: 10px;
+            border: none;
+            .margin(@r:-5px);
+        }
+        :nth-child(2){
+            .margin(@l:-5px);
+            width: @width - 20;
+            @{bg}:#fff;
+            .font(@fs:18px, @lh:30px ,@ff:Monospace,  @ta: center, @c:@background-color0f0, @ws:nowrap);
+            border-radius: 10px;
+            border: none;
+        }
+        :nth-child(3){
+            .position(absolute,0,15px,0 );
+            width: @width - 70;
+            height: @width - 70;
+            border: none;
+        }
+    }
+}
+.menu{
+    .position(fixed,62px,0,0);
+    width: @width100;
+    height: 40px;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid #00000022;
+    .background(@c:#fff) ;
+    .padding(5px,0,5px,0);
+    .display(flex, @ai:center, @fg: 1, );
+    div{
+        width: (@width100/3);
+        .display(inline-block);
+        border-left:none;
+        border-right:none;
+        white-space: nowrap;
+        .margin(0,0,0,0);
+        select{
+            width: @width100;
+            height: 25px;
+            .font(16px, 16px, @ta:center, #00000022, ) ;
+            appearance: none; 
+            outline: none;
+            .background(#fff,url(../img/xialajiantou.png), 15px,@px: 80%, 50%, no-repeat);
+            .margin(0,0,0,0);
+            border-left:none;
+            border-bottom: none;
+            border-top:none;
+        }
+    }
+}
+.main{
+    .main-header{
+        .padding(5px, 0, 5px, 0) ;
+        width: @width100;
+            .background(#00000000, url(../img/riqitubiao.png), 15px, @px: 20px, @py:center, no-repeat);
+            .font(12px, 16px,@ta: left, @c:#00000088, nowrap, @ti:40px) ;
+    }
+    .main-body{
+        width: @width100;
+        .background(#00000000, url(../img//dayuhaoo.png), 15px, @px: 95%, @py:center, no-repeat);
+        :nth-child(1){
+            .display(inline-block);
+            .margin(auto, 0, auto, 0) ;
+            .font(20px, 40px,@ta: left, @c:#00000088, nowrap, @ti:40px) ;
+        }
+        :nth-child(2){
+             float: right;
+            .margin(auto, 15%, auto, 0) ;
+            .font(20px, 40px,@ta: right, @c:#ff0000, nowrap, @ti: -5%) ;
+        }
+    }
+    .main-footer{
+        .padding(5px, 0, 5px, 0) ;
+        width: @width100;
+        .background(#00000000, url(../img/xiaodingweibiaoqian.png), 15px, @px: 20px, @py:center, no-repeat);
+        .font(12px, 16px,@ta: left, @c:#00000088, nowrap, @ti:40px) ;
+        border-bottom: 1px solid #00000022;
+    }
+}
+.footer{
+    width: @width100;
+    .padding(10px, 0, 10px, 0) ;
+    .position(fixed, @t:auto, 0, 0, 0) ;
+    .display(flex, @ai: center, @jc: space-around);
+    .background(@c:#fff) ;
+    p{
+        .margin(25px, 0, 0, 0) ;
+    }
+    .footerfront{
+        height: 45px;
+        .margin(0, 0, 0, 0) ;
+        .background(#00000000, url(../img/shouye.png), 25px, @px: center, @py:top, no-repeat);
+        .font(12px, 20px,@ta: center, @c:@background-color0f0, nowrap) ;
+    }
+    .footercentre{
+        width: @width - 60;
+        height:40px;
+        .background(@background-color0f0 , url(../img/qianbi.png), 25px, @px: center, @py:center, no-repeat);
+        border-radius: 50%;
+    }
+    .footerqueen{
+        .position(relative, 0, 0, 0, 0) ;
+        height: 45px;
+        .margin(0, 0, 0, 0) ;
+        .background(#00000000, url(../img/wode.png), 25px, @px: center,@py:top, no-repeat);
+        .font(12px, 20px,@ta: center, @c:@background-color0f0, nowrap);
+        :nth-last-child(1){
+            .position(absolute, 0, 0, 0, 0);
+            width: @width100;
+            height: @width100;
+            :nth-child(1){
+                width: @width100;
+                height: @width;
+            }
+        }
+    }
+}
+
+
+
