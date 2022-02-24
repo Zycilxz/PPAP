@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dh {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: green;
+  z-index: 3;
+}
+.dh > div.bggreen {
+  float: left;
+  height: 40px;
+  margin-bottom: -40px;
+  width: 100%;
+  background-color: #008000;
+}
+.dh > label > div.menu > div.a1 > a,
+.dh > div.menu2 > div > a {
+  font-family: monospace;
+  text-decoration: none;
+  color: #fff;
+}
+div.dh > div.menu2 {
+  margin-top: -150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 120px;
+  background-color: green;
+  z-index: 2;
+}
+input[type=checkbox] {
+  display: none;
+}
+@media (min-width: 680px) {
+  .dh {
+    min-height: 40px;
+  }
+  .menu {
+    width: 100%;
+    background-color: green;
+  }
+  .menu div.a1 {
+    width: 50px;
+    float: right;
+    line-height: 39px;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 20px;
+    position: relative;
+    text-align: center;
+  }
+  .menu div.a1:hover .border5 {
+    display: block;
+  }
+  .b {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .dh {
+    min-height: 40px;
+  }
+  .menu {
+    display: none;
+  }
+  #checkbox1:checked + .menu2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 160px;
+    padding-top: 40px;
+    margin-top: 0px;
+    z-index: -99999999;
+  }
+  #checkbox1:checked + .menu2 .menu2 {
+    display: block;
+  }
+  div.dh label > div.menu {
+    display: none;
+  }
+  .menu {
+    width: 100%;
+    height: 40px;
+    background-color: green;
+    z-index: 4;
+  }
+  .b {
+    display: block;
+    float: right;
+    position: relative;
+    top: 0;
+    right: 30px;
+    margin: 5px 30px -35px 0;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(240, 240, 240, 0.1);
+    background-image: url(../img/菜单.png);
+    background-size: 35px;
+    background-position: center;
+    z-index: 4;
+    border-radius: 2px;
+    border: 1px solid rgba(240, 240, 240, 0.1);
+  }
+  .b:hover {
+    border: 1px solid rgba(240, 240, 240, 0.3);
+  }
+  .menu2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 120px;
+    background-color: green;
+    z-index: -1;
+  }
+  .menu2 div {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,332 @@
+@import "../less/dh.less";
+@import "../less/lbt.less";
+@import "../less/csssingle.less";
+@import "../less/paiban.css";
+@import "../less/container.css";
+@import "../less/wanggexitong.css";
+
+//变量
+//inherit 继承
+@width100:100%;
+@width: 100px;
+@width-: -100px;
+@height:100px;
+@background-color00000: #00000000;
+@background-colorfff: #fff;
+@background-colorf0f: #f0f0f0;
+@bg: background-color;
+@value:100px;
+@auto:auto;
+
+.bz{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.display(@d:_,@ai:_,@jc:_,@fd:_,@fw:_,@ff:_,@ac:_){
+    display: @d;
+    align-items: @ai;
+    justify-content: @jc;
+    flex-direction: @fd ;
+    flex-flow: @ff;
+    flex-wrap: @fw;
+    align-content: @ac;
+}
+.position(@p:_,@t:_,@r:_,@b:_,@l:_){
+    position: @p;
+    top:@t;
+    left:@l;
+    right: @r;
+    bottom: @b;
+}
+.padding(@t:_,@r:_,@b:_,@l:_){
+    padding-top: @t;
+    padding-right: @r;
+    padding-bottom: @b;
+    padding-left: @l;
+}
+.margin(@t:auto,@r:auto,@b:auto,@l:auto){
+    margin-top: @t;
+    margin-right: @r;
+    margin-bottom: @b;
+    margin-left: @l;
+}
+.background(@c:_,@i:_,@s:_,@p:_,@px:_,@py:_,@r:repeat){
+    background-color: @c ;
+    background-image: @i;
+    background-size: @s;
+    background-position: @p;
+    background-position-x: @px;
+    background-position-y: @py;
+    background-repeat: @r;
+}
+.font(@fs:_,@lh:_,@ff:Monospace,@ta:_,@c:_,@ws:_,@td:_,@tt:_,@ti:_,@ls:_,@bc:_ ){
+    font-size: @fs;
+    line-height:@lh;
+    font-family: @ff;
+    background-color: @bc;
+    //text-align: justify; 值会拉伸线条，使每条线都有相等的宽度（比如报纸和杂志）。
+    text-align: @ta;
+    //将所有内容转换为大写或小写字母，或将每个单词的首字母大写uppercase大lowercase小capitalize首大
+    text-transform: @tt;
+    color: @c;
+    //vertical-align 属性设置元素的垂直对齐方式。top middle bottom  对于使用在块元素上会报错
+   // vertical-align: @va;
+    //文本换行
+    white-space: @ws;
+    //字体装饰 text-decoration 属性用于设置或删除文本装饰。text-decoration: none; 通常用于从链接上删除下划线：text-decoration: overline;上   text-decoration: line-through;中   text-decoration: underline;下
+    text-decoration: @td;
+    //更改元素的文本方向direction: rtl; unicode-bidi: bidi-override;
+    //首行缩进px
+    text-indent: @ti;
+    //字母间距px；word-spacing单词或字间距px
+    letter-spacing: @ls;
+    //text-shadow 文字阴影效果  两个数值1向右偏移，数值2向下偏移 数值3阴影模糊效果 后面可跟颜色
+    //white-space:nowrap overflow:hidden;使用后  text-overflow:ellipsis溢出省略号text-overflow:clip溢出隐藏
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+    min-width: 480px;
+    background-color: rgba(240,240,240,1);
+}
+.containerziti.container {
+    .padding(4px, 15px, 4px, 15px) ;
+    .font(12px, 22px, @c: #008000);
+    div{
+        width: @width - 80;
+        height: @width - 80;
+        .r;
+        .ml20;
+        border-radius: 50%;
+        border: 1px solid green;
+        .padding(3px,2px,3px,2px) ;
+        .tc;
+        img{
+            .db;
+            width: @width100;
+            height:@width100;
+        }
+    }
+}
+.border5 {
+    .position(@p:absolute, @b:0) ;
+    .dn;
+    height: 2px;
+    width: @width100;
+    @{bg}:@background-colorfff; 
+}
+
+.container-fluid.backcolor{
+    background-color: seagreen; color: @background-colorfff;
+    div.container.bacolor{
+        .pt30; 
+        .font(8px, 50px) ;
+        position: relative;
+        div{
+            div{
+                a{
+                     color: white; 
+                     line-height: 20px;
+                }
+            }
+        }
+        div.row.erweima{
+            .db;
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            line-height: 10px ;
+            text-align: center;
+        }
+    }
+}   
+.container-fluid{
+    border-top: 1px solid rgba(0, 188, 0, 1) ;
+    background-color: seagreen;
+    .footer {
+        .tc;
+        .font(10px,25px );
+    } 
+}
+
+.container-fluid{
+    .p0;
+    img{
+        width: 100%;  
+        mask-repeat: no-repeat;
+    }
+}
+
+.container.mainbox{
+        position: relative; 
+        height: 900px;
+    .container.maina{    
+            display: block;
+            position: absolute;
+            top: 84px;
+            right: 5%;
+            left: 30%;
+            width: 65%;
+            line-height: 25px;
+            min-height: 800px;
+            background-color: rgba(255,255,255,1);
+            z-index: 1;
+            padding: 20px 30px;
+            color: rgba(200,200,200,1);
+            font-size: 8px;
+            word-wrap:break-word;   
+            .maina111 {
+                border-bottom: solid 1px rgba(200,200,200,.8);
+                padding: 10px 15px;  
+                width: 100%;
+                min-height: 152px;
+                .maina1 {
+                    float: left;
+                    padding-left: 20px;
+                    height: 122px;
+                    width: 154px;
+                }
+            }
+            .maina122 {
+                width: 100%; 
+                height: auto; 
+                padding: 10px 30px;
+            }
+    }
+    div.row{
+        div.col-12{
+           .p30;
+           span{
+                color: green;
+           }
+        }
+    }
+    .container.menuleft{
+            width: 25%; 
+            height: 450px; 
+            float: left; 
+            background-color: rgba(255,255,255,1); 
+            text-align: center; 
+            .row.menuleft1{
+                border-bottom: 1px solid rgba(40, 40, 40, 0.5);
+                padding: 10px;
+                b{
+                    margin: auto;
+                }
+            } 
+            div.row{
+                padding: 10px 0;
+                .col-md-12.wenzidaxiao{  
+                    font-size: 10px;
+                    color: green;
+                    white-space: nowrap;
+                    &:hover{  
+                        text-align:center;
+                        font-size: 10px;
+                        white-space: nowrap;
+                        color:  orange;
+                    }
+                    div{
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid orange;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                        &:hover{
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border: 1px solid orange;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                            background-color: orange;
+                        }
+                    }
+                }
+                .dingwei{
+                    display: none;
+                    position: absolute;
+                    top: 84px;
+                    right: 5%;
+                    left: 30%;
+                    width: 65%;
+                    height: 800px;
+                    background-color: rgba(255,255,255,1);
+                    padding: 20px 30px;
+                    color: rgba(200,200,200,1);
+                    z-index: -2;
+                   /* hower  显示在这*/
+                   &:hover{
+                    display: block;
+                }
+                }
+            }
+    }
+}
+
+
+@media (min-width: 476px) and ( max-width:770px) {
+.container {
+    max-width: 900px;
+}
+}
+@media ( max-width:768px) {
+    .maina {
+        display: block;
+        position: absolute;
+        top: 500px;
+        width: 90%;
+        line-height: 25px;
+        min-height: 800px;
+        background-color: rgba(255,255,255,1);
+        z-index: 1;
+        padding: 20px 30px;
+        color: rgba(200,200,200,1);
+        font-size: 8px;
+        word-wrap:break-word;   
+        right: 5%; 
+        left: 5%;
+    }
+}
+@media ( max-width:768px) {
+    .dingwei {
+        display: block;
+        position: absolute;
+        top: 500px;
+        width: 90%;
+        line-height: 25px;
+        min-height: 800px;
+        background-color: rgba(255,255,255,1);
+        z-index: -2;
+        padding: 20px 30px;
+        color: rgba(200,200,200,1);
+        font-size: 8px;
+        word-wrap:break-word; 
+        right: 5%; 
+        left: 5%;
+       
+    }
+   
+}
+@media ( max-width:768px) {
+    .menuleft {
+        width: 100%;
+        background-color: rgba(255,255,255,1); 
+        text-align: center;  
+        float: none;
+        height: 400px;
+
+    }
+}
+@media ( max-width:768px) {
+    .mainbox {
+        height: 1320px;
+    }
+}

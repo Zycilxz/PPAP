@@ -1,0 +1,150 @@
+//导航
+body{
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+.dh{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: green;
+    z-index: 3;
+}
+.dh > div.bggreen{
+    float: left; 
+    height: 40px;
+    margin-bottom: -40px;  
+    width: 100%; 
+    background-color: #008000;
+}
+.dh > label > div.menu > div.a1 > a,
+.dh > div.menu2 > div > a{
+    font-family: monospace;
+    text-decoration: none;
+    color: #fff;
+}
+//div.dh下的元素div.menu2
+div.dh > div.menu2{
+    margin-top: -150px;
+    //transition: .5s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; 
+    height: 120px; 
+    background-color: green;
+    z-index: 2;
+}
+//input[type=checkbox]可以对所有带有 type=checkbox 属性的input应用样式
+input[type=checkbox] {
+    display: none;
+}
+@media (min-width:680px) {
+    .dh{
+        min-height: 40px;
+   }
+    .menu{
+        width: 100%; 
+        background-color: green; 
+        div.a1{
+            width: 50px;  
+            float: right; 
+            line-height: 39px;
+            font-size: 16px;
+            color: #fff;
+            margin-right: 20px;
+            position: relative;
+            text-align: center;
+            &:hover .border5{
+                display: block;
+            }
+        }
+    }
+  .b{
+      display: none;
+  }
+}
+@media (max-width:680px) {
+    .dh{
+         min-height: 40px;
+    }
+    .menu{
+        display: none;
+    }
+    //相邻兄弟选择器使用了加号（+），即相邻兄弟结合符 用一个结合符只能选择两个相邻兄弟中的第二个元素
+    #checkbox1:checked + .menu2{
+            // margin-top: 40px;
+            .menu2{
+                display: block;
+            }
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%; 
+            height: 160px; 
+            padding-top: 40px;
+            margin-top: 0px;
+            z-index: -99999999;
+    }  
+    // div.dh label > div.menu > div{
+    //     display: none;
+    // }
+    div.dh label > div.menu {
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        height: 40px; 
+        background-color: green;  
+        z-index: 4;
+    }
+    .b{
+        display: block;
+        float: right;
+        position: relative;
+        top: 0;
+        right: 30px;
+        margin: 5px 30px -35px 0;
+        width: 30px; 
+        height: 30px; 
+        background-color: rgba(240, 240, 240, .1);
+        background-image: url(../img/菜单.png);
+        background-size: 35px;
+        background-position: center;
+        z-index: 4;
+        border-radius: 2px;
+        border: 1px solid rgba(240, 240, 240, .1);
+    }
+    .b:hover{
+        border: 1px solid rgba(240, 240, 240, .3);
+    }  
+    .menu2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%; 
+        height: 120px; 
+        background-color: green;
+        z-index: -1;
+        div{
+            width: 100%; 
+            height: 30px; 
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            color: #fff;
+            z-index: 1;
+        }
+    }
+} 

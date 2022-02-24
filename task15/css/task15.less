@@ -1,0 +1,357 @@
+@import "../less/dh.less";
+@import "../less/lbt.less";
+@import "../less/csssingle.less";
+@import "../less/paiban.css";
+@import "../less/container.css";
+@import "../less/wanggexitong.css";
+
+//变量
+//inherit 继承
+@width100:100%;
+@width: 100px;
+@width-: -100px;
+@height:100px;
+@background-color00000: #00000000;
+@background-colorfff: #fff;
+@background-colorf0f: #f0f0f0;
+@background-colorf0fe6: #f0f0f0;
+@bg: background-color;
+@value:100px;
+@auto:auto;
+
+
+.bz{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.display(@d:_,@ai:_,@jc:_,@fd:_,@fw:_,@ff:_,@ac:_){
+    display: @d;
+    align-items: @ai;
+    justify-content: @jc;
+    flex-direction: @fd ;
+    flex-flow: @ff;
+    flex-wrap: @fw;
+    align-content: @ac;
+}
+.position(@p:_,@t:_,@r:_,@b:_,@l:_){
+    position: @p;
+    top:@t;
+    left:@l;
+    right: @r;
+    bottom: @b;
+}
+.padding(@t:_,@r:_,@b:_,@l:_){
+    padding-top: @t;
+    padding-right: @r;
+    padding-bottom: @b;
+    padding-left: @l;
+}
+.margin(@t:auto,@r:auto,@b:auto,@l:auto){
+    margin-top: @t;
+    margin-right: @r;
+    margin-bottom: @b;
+    margin-left: @l;
+}
+.background(@c:_,@i:_,@s:_,@p:_,@px:_,@py:_,@r:repeat){
+    background-color: @c ;
+    background-image: @i;
+    background-size: @s;
+    background-position: @p;
+    background-position-x: @px;
+    background-position-y: @py;
+    background-repeat: @r;
+}
+.font(@fs:_,@lh:_,@ff:Monospace,@ta:_,@c:_,@ws:_,@td:_,@tt:_,@ti:_,@ls:_,@bc:_ ){
+    font-size: @fs;
+    line-height:@lh;
+    font-family: @ff;
+    background-color: @bc;
+    //text-align: justify; 值会拉伸线条，使每条线都有相等的宽度（比如报纸和杂志）。
+    text-align: @ta;
+    //将所有内容转换为大写或小写字母，或将每个单词的首字母大写uppercase大lowercase小capitalize首大
+    text-transform: @tt;
+    color: @c;
+    //vertical-align 属性设置元素的垂直对齐方式。top middle bottom  对于使用在块元素上会报错
+   // vertical-align: @va;
+    //文本换行
+    white-space: @ws;
+    //字体装饰 text-decoration 属性用于设置或删除文本装饰。text-decoration: none; 通常用于从链接上删除下划线：text-decoration: overline;上   text-decoration: line-through;中   text-decoration: underline;下
+    text-decoration: @td;
+    //更改元素的文本方向direction: rtl; unicode-bidi: bidi-override;
+    //首行缩进px
+    text-indent: @ti;
+    //字母间距px；word-spacing单词或字间距px
+    letter-spacing: @ls;
+    //text-shadow 文字阴影效果  两个数值1向右偏移，数值2向下偏移 数值3阴影模糊效果 后面可跟颜色
+    //white-space:nowrap overflow:hidden;使用后  text-overflow:ellipsis溢出省略号text-overflow:clip溢出隐藏
+}
+body {
+    background-color: @background-colorf0fe6;
+    min-width: 480px;
+}
+.containerziti.container {
+    .padding(4px, 15px, 4px, 15px) ;
+    .font(12px, 22px, @c: #008000);
+    div{
+        width: @width - 80;
+        height: @width - 80;
+        .r;
+        .ml20;
+        border-radius: 50%;
+        border: 1px solid green;
+        .padding(3px,2px,3px,2px) ;
+        .tc;
+        img{
+            .db;
+            width: @width100;
+            height:@width100;
+        }
+    }
+}
+
+.border5 {
+    .position(@p:absolute, @b:0) ;
+    .dn;
+    height: 2px;
+    width: @width100;
+    @{bg}:@background-colorfff; 
+    /*.margin(0, -0.5rem, 0, -0.5rem) ;*/
+}
+.container.mt40{
+    margin-top: 40px;
+    .row{
+        div.col-md-3{
+            .maina{
+                .db;
+                justify-content: center;
+                align-items: center;
+                .tc;
+                .margin(20px) ;
+                .padding(0, 20px, 0, 20px);
+                height:@width - 35;
+                line-height:@width - 35;
+                p{
+                    font-size: 25px; 
+                }
+            }
+            .maina1 {
+                .db; 
+                .margin(10px, 0, 10px, 0);
+                .padding(0, 20px, 0, 20px);
+                .font(10px);
+            }
+        }    
+        div.col-md-3.biankuang{ 
+                border-left: 1px dashed #000;
+                padding-top: 8%;
+                div{  
+                    div{
+                        .db;
+                        .margin(10px,0,10px,0);
+                        .tc;
+                    }
+                }
+            }
+        
+    }
+}
+.container{
+    div.row{
+        div.col{
+            p{
+               text-align: center; 
+               font-size: 30px;
+            }
+        }
+        div.mainc{
+            .display(flex,@ai: center,@jc: center, @fd: row) ;
+            div.mainc1{
+                .font(10px, 26px, @ta: center,@c:#008000) ;
+                width: @width - 74;
+                height: @width - 74;
+                border-radius: 50%;
+                background-color: @background-colorfff;
+                margin: 0 10px;
+                flex-shrink: 0;
+            }
+            div.mainc2{
+                padding-top: 12px;
+                font-size: 10px;
+                width: auto;
+                height: auto;
+                line-height: 16px;
+                vertical-align: bottom;
+            }
+            div.mainc-bg{
+                width: 32px;
+                height: 30px;
+                background-image: url(../img/技能树首页/小图标/形状\ 7白色\ 拷贝\ 5.png);
+                padding: 1px 5px; 
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+.container{
+    .container-fluid{
+        div.row{
+            div.slide{
+                ul.slide-auto{
+                    li{
+                        div.bg-rgba{
+                            .l;
+                            background-color: @background-colorfff;
+                            border: 10px solid rgba(240, 240, 240, .9);
+                            .padding(30px, 20px, 100px, 20px) ;
+                            p{
+                                font-size: 13px; 
+                                text-align: center;
+                            }
+                            :nth-last-child(1){
+                                font-size: 12px;
+                            }
+                        }
+                        div.mainca{
+                            width: @width+8;
+                            height: @width+8;
+                            margin: auto; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.container.mb80{
+    margin-bottom: 80px;
+    div.ta{
+        text-align: center; 
+        width: 100%; 
+        margin: 50px 0 30px 0;
+    }
+    div.row{
+        .tupian1 {
+            .background(@c:@background-colorfff, @i: url(../img/技能树首页/技能树/a.png), @s:100px, @p: center, @r: no-repeat);         
+            height: @height+50;
+            &:hover {
+                .bz;
+            }
+        }
+        .tupian2 {
+            .background(@c:@background-colorfff, @i: url(../img/技能树首页/技能树/b.png), @s:100px, @p: center, @r: no-repeat);         
+            height: @height+50;
+            &:hover {
+                .bz;
+            }
+        }
+        .tupian3 {
+            .background(@c:@background-colorfff, @i: url(../img/技能树首页/技能树/c.png), @s:100px, @p: center, @r: no-repeat);         
+            height: @height+50;
+            &:hover {
+               .bz;
+            }
+        }
+        .tupian4 {            
+            .background(@c:@background-colorfff, @i: url(../img/技能树首页/技能树/d.png), @s:100px, @p: center, @r: no-repeat);         
+            height: @height+50;
+            &:hover {
+                .bz;
+            }
+        }
+        .tupian5 {
+            .background(@c:@background-colorfff, @i: url(../img/技能树首页/技能树/e.png), @s:100px, @p: center, @r: no-repeat);         
+            height: @height+50;
+            &:hover {
+                .bz;
+            }
+        }
+    }
+}
+.container-fluid.margin-topa{
+    div.container{
+        padding: 50px 0;
+        div.row{
+            text-align: center; 
+            font-size: 25px; 
+            display: block;  
+        }
+        div.row.margin-topa{
+            white-space: nowrap; 
+            font-size: 12px;
+            color: rgba(34, 34, 34, 0.8); 
+            background-color: @background-colorfff;
+        }
+    }
+
+}
+.container-fluid.backcolor{
+    background-color: seagreen; 
+    color: @background-colorfff;
+    div.container.bacolor{
+        .pt30; 
+        .font(8px, 50px) ;
+        position: relative;
+        div{
+            div{
+                a{
+                   color: white; 
+                   line-height: 20px;
+                }
+            }
+        }
+        div.row.erweima{
+            .db;
+            .position(@p:absolute,@r: 20px,@b:10px );
+            .font( @lh: 10px,  @ta: center) ;
+        }
+    } 
+}   
+
+.container-fluid.backcolor{
+    border-top: 1px solid rgba(0, 188, 0, 1) ;
+    background-color: seagreen;
+    .footer {
+        .tc;
+        .font(10px,25px );
+    } 
+}
+
+@media (max-width: 768px) {
+    .border5 {
+     z-index: -2;
+    }
+  }
+@media (max-width: 992px) {
+    .maina1 {
+     .tc;
+    }
+  }
+@media (max-width: 992px) {
+    .mainc-bg {
+    .dn;
+    }
+}
+@media (max-width: 768px) {
+    .biankuang  {
+        border-left: 0;
+        padding-top: 10%;
+    }
+}
+@media (max-width: 1024px) {
+    .biankuang  {
+        padding-top: 6%;
+    }
+}
+@media (min-width: 1025px) {
+    .biankuang  {
+        padding-top: 4%;
+    }
+}
+@media (max-width: 768px) {
+    .bg-rgba {
+     margin: 10%;
+     .padding(10px,60px,10px,60px);
+     .font(@lh:20px) ;
+    }
+}

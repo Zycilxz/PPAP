@@ -1,0 +1,284 @@
+@import "../less/dh.less";
+@import "../less/lbt.less";
+@import "../less/csssingle.less";
+@import "../less/paiban.css";
+@import "../less/container.css";
+@import "../less/wanggexitong.css";
+
+//变量
+//inherit 继承
+@width100:100%;
+@width: 100px;
+@width-: -100px;
+@height:100px;
+@background-color00000: #00000000;
+@background-colorfff: #fff;
+@background-colorf0f: #f0f0f0;
+@background-colorf0fe6: #f0f0f0;
+@background-colorc8: #c8c8c8;
+@background-colorc880: #c8c8c880;
+@bg: background-color;
+@value:100px;
+@auto:auto;
+
+.bz{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.display(@d:_,@ai:_,@jc:_,@fd:_,@fw:_,@ff:_,@ac:_){
+    display: @d;
+    align-items: @ai;
+    justify-content: @jc;
+    flex-direction: @fd ;
+    flex-flow: @ff;
+    flex-wrap: @fw;
+    align-content: @ac;
+}
+.position(@p:_,@t:_,@r:_,@b:_,@l:_){
+    position: @p;
+    top:@t;
+    left:@l;
+    right: @r;
+    bottom: @b;
+}
+.padding(@t:_,@r:_,@b:_,@l:_){
+    padding-top: @t;
+    padding-right: @r;
+    padding-bottom: @b;
+    padding-left: @l;
+}
+.margin(@t:auto,@r:auto,@b:auto,@l:auto){
+    margin-top: @t;
+    margin-right: @r;
+    margin-bottom: @b;
+    margin-left: @l;
+}
+.background(@c:_,@i:_,@s:_,@p:_,@px:_,@py:_,@r:repeat){
+    background-color: @c ;
+    background-image: @i;
+    background-size: @s;
+    background-position: @p;
+    background-position-x: @px;
+    background-position-y: @py;
+    background-repeat: @r;
+}
+.font(@fs:_,@lh:_,@ff:Monospace,@ta:_,@c:_,@ws:_,@td:_,@tt:_,@ti:_,@ls:_,@bc:_ ){
+    font-size: @fs;
+    line-height:@lh;
+    font-family: @ff;
+    background-color: @bc;
+    //text-align: justify; 值会拉伸线条，使每条线都有相等的宽度（比如报纸和杂志）。
+    text-align: @ta;
+    //将所有内容转换为大写或小写字母，或将每个单词的首字母大写uppercase大lowercase小capitalize首大
+    text-transform: @tt;
+    color: @c;
+    //vertical-align 属性设置元素的垂直对齐方式。top middle bottom  对于使用在块元素上会报错
+   // vertical-align: @va;
+    //文本换行
+    white-space: @ws;
+    //字体装饰 text-decoration 属性用于设置或删除文本装饰。text-decoration: none; 通常用于从链接上删除下划线：text-decoration: overline;上   text-decoration: line-through;中   text-decoration: underline;下
+    text-decoration: @td;
+    //更改元素的文本方向direction: rtl; unicode-bidi: bidi-override;
+    //首行缩进px
+    text-indent: @ti;
+    //字母间距px；word-spacing单词或字间距px
+    letter-spacing: @ls;
+    //text-shadow 文字阴影效果  两个数值1向右偏移，数值2向下偏移 数值3阴影模糊效果 后面可跟颜色
+    //white-space:nowrap overflow:hidden;使用后  text-overflow:ellipsis溢出省略号text-overflow:clip溢出隐藏
+}
+body {
+    margin: 0;
+    min-width: 470px;
+    background-color: rgba(240,240,240,1);
+}
+.containerziti {
+    .padding(4px, 15px, 4px, 15px) ;
+    .font(12px, 22px, @c: #008000);
+    div{
+        width: @width - 80;
+        height: @width - 80;
+        .r;
+        .ml20;
+        border-radius: 50%;
+        border: 1px solid green;
+        .padding(3px,2px,3px,2px) ;
+        .tc;
+        img{
+            .db;
+            width: @width100;
+            height:@width100;
+        }
+    }
+}
+.border5 {
+    .position(@p:absolute, @b:0) ;
+    .dn;
+    height: 2px;
+    width: @width100;
+    @{bg}:@background-colorfff; 
+}
+.container{
+    .mainrow1 {
+        margin: 20px auto;
+        border-bottom: 1px solid @background-colorc8; 
+        line-height: 30px; 
+        height: 47.6px;
+        span{
+            color: green;
+        }
+    }
+    .mainrow2{
+        border-bottom: 0.5px solid @background-colorc880; 
+        .font(@lh:25px, @ws:nowrap,@fs: 11px,  );
+        .h36{
+            height: 36px; 
+        }
+        div{
+            a{
+                color: black;
+            }
+        }
+    }
+}
+.container.biao>div{
+    height: @width - 52; 
+    border-bottom: 1px solid @background-colorc8;
+    line-height: 30px; 
+    height: 47.6px;
+    b{
+       font-size: 18px; line-height: 15px;
+    } 
+}
+.container.biaoji > div{
+    .maincol1 {
+            position: relative;
+            font-size: 5px; 
+            .mt20;
+            .mb20;
+            .maintop {
+                border: 1px solid rgba(200,200,200,.8);  
+                .p5; 
+                height: 169px; 
+                .tl;
+                background-color: @background-colorfff;
+                div{
+                    width: 139px; 
+                    height: 139px;
+                    margin: 10px; 
+                    .l;
+                }
+                h5{
+                    line-height: 70px;
+                }
+            }
+            .middle{
+                height: 26px; 
+                display: flex; 
+                justify-content: space-around;
+                align-items: center; 
+                .maincol2 {
+                    border: 1px solid @background-colorc880 ; 
+                    line-height: 25px; 
+                    width: (@width100 / 2);
+                    background-color: @background-colorfff;
+                    padding: 0 10px;
+                    img{
+                        margin: 0 0 4px 5px;
+                    }
+                }
+                .maincol3 {
+                    font-size: 6px; 
+                    border: 1px solid @background-colorc880 ;  
+                    width: (@width100/2); 
+                    line-height: 25px;
+                    background-color: @background-colorfff;
+                    padding: 0 5px;
+                    span{
+                        color: red;
+                    }
+                }
+            }
+            .bottom{
+                width: 100%; 
+                height: 80px;
+                .maincol4 {
+                    .l;
+                    width: 30%;
+                    font-size: 6px; 
+                    text-align: center;  
+                    border: 1px solid @background-colorc880;  
+                    height: 80px; 
+                    line-height: 80px;
+                    background-color: @background-colorfff;
+                }
+                .maindiv1 {
+                    .l;
+                    width: 70%; 
+                    height: 80px;  
+                    border: 1px solid @background-colorc880 ; 
+                    .mainrow4 {
+                        border: 1px solid @background-colorc880 ; 
+                        height: 33.333333%; 
+                        line-height: 25px;
+                        background-color: @background-colorfff;
+                        .maindiv2 {
+                            .l;
+                            .ml10;
+                        }
+                        .maindiv3 {
+                            .r;
+                            .mr10;
+                        }
+                    }
+                }
+            }
+            .mainrow5 {
+                width: @width100;
+                .font(@lh:26px,@fs:5px,);
+                height: 26px;
+                border: 1px solid @background-colorc880 ; 
+                background-color: @background-colorfff;
+                padding: 0 10px;
+                span{
+                    color: red;
+                }
+            }
+            &:hover .jueduidingwei {
+                display: block;
+            }
+            .jueduidingwei {
+                .display(@d:none,  );
+                .position(@p:absolute,@t: 0 );
+                width: auto;  
+                height: @width100;
+                .p30;
+                margin-right: 15px;
+                background-color: rgba(0, 0, 0, .5) ;
+                color: @background-colorfff;
+                text-align: center;
+            }
+    }
+}
+.container-fluid.backcolor{
+    background-color: seagreen; 
+    color: @background-colorfff;
+    div.container.bacolor{
+        .pt30; 
+        .font(8px, 50px) ;
+        position: relative;
+        div.row.erweima{
+            .db;
+            .position(@p:absolute,@r:20px,@b:10px,);
+            .font(@lh: 10px,@ta: center, );
+        }
+    }
+}  
+.container-fluid{
+    border-top: 1px solid rgba(0, 188, 0, 1) ;
+    background-color: seagreen;
+    .footer {
+        .tc;
+        .font(10px,25px );
+    } 
+}
